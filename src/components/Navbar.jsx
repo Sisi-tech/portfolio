@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
 
         {/* social icons */}
-        <div className='flex fixed flex-col top-[35%] left-0'>
+        <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
             <ul>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300'
                     style={{background: 'linear-gradient(to right, white 60%, blue 40%'}} >
@@ -49,6 +49,30 @@ const Navbar = () => {
                         href="/">
                         <span className='text-black'>LinkedIn</span>
                         <FaLinkedin size={30} />
+                    </a>
+                </li>
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300'
+                    style={{background: 'linear-gradient(to right, white 60%, #F5F7FA 40%'}} >
+                    <a className='flex justify-between items-center w-full text-black-100' 
+                        href="/">
+                        <span className='text-black'>GitHub</span>
+                        <FaGithub size={30} />
+                    </a>
+                </li>
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300'
+                    style={{background: 'linear-gradient(to right, white 60%, #0074e4 40%'}} >
+                    <a className='flex justify-between items-center w-full text-gray-100' 
+                        href="/">
+                        <span className='text-black'>Email</span>
+                        <HiOutlineMail size={30} />
+                    </a>
+                </li>
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300'
+                    style={{background: 'linear-gradient(to right, white 60%, #888888 40%'}} >
+                    <a className='flex justify-between items-center w-full text-gray-100' 
+                        href="/">
+                        <span className='text-black'>Resume</span>
+                        <BsFillPersonLinesFill size={30} />
                     </a>
                 </li>
             </ul>
