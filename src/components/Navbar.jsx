@@ -67,7 +67,7 @@ const Navbar = () => {
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300'
                     style={{background: 'linear-gradient(to right, white 60%, blue 40%'}} >
                     <a className='flex justify-between items-center w-full text-gray-100' 
-                        href="/">
+                        href="https://www.linkedin.com/in/sisiwang242/">
                         <span className='text-black'>LinkedIn</span>
                         <FaLinkedin size={30} />
                     </a>
@@ -75,7 +75,7 @@ const Navbar = () => {
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300'
                     style={{background: 'linear-gradient(to right, white 60%, #F5F7FA 40%'}} >
                     <a className='flex justify-between items-center w-full text-black-100' 
-                        href="/">
+                        href="https://github.com/Sisi-tech">
                         <span className='text-black'>GitHub</span>
                         <FaGithub size={30} />
                     </a>
@@ -83,7 +83,7 @@ const Navbar = () => {
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300'
                     style={{background: 'linear-gradient(to right, white 60%, #0074e4 40%'}} >
                     <a className='flex justify-between items-center w-full text-gray-100' 
-                        href="/">
+                        href="sisiwang242@gmail.com">
                         <span className='text-black'>Email</span>
                         <HiOutlineMail size={30} />
                     </a>
