@@ -1,8 +1,9 @@
 import React from 'react'
+import {Link} from 'react-scroll'
 
 const Contact = () => {
   return (
-    <div name='contact' className='w-full h-screen bg-[#e5ddf4] flex justify-center items-center p-4'>
+    <div name='contact' className='w-full h-screen bg-[#e5ddf4] flex flex-col justify-center items-center p-4 gap-4'>
       <form method='POST' action='https://getform.io/f/447062fc-e66f-4e67-917f-2a33187594ae' className='flex flex-col max-w-[600px] w-full'>
         <div className='pb-8 '>
           <p className='text-4xl border-b-4 border-purple-800 inline'>Contact</p>
@@ -13,6 +14,11 @@ const Contact = () => {
         <textarea className='p-2'name='message' rows='10' />
         <button className='px-4 py-4 my-8 mx-auto flex items-center border-2 border-purple-600 rounded-full hover:bg-purple-600 hover:border-purple-600'>Let's Collaborate</button>
       </form>
+      <div className='text-right bottom-0 right-0 m-4'>
+        <button>
+          <Link to='home' smooth={true} duration={500} >Back to Top</Link>
+        </button>
+      </div>
     </div>
   )
 }
