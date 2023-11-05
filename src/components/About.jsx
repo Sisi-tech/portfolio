@@ -14,7 +14,7 @@ const About = () => {
                 {/* <div></div> */}
             </div>
             <div className='max-w-[1000px] w-full grid grid-cols-1 sm:grid-cols-2'>
-                    <div className='px-4 pt-3 flex justify-center items-center hover:scale-125'>
+                    <div className='px-4 py-5 pt-4 pt-3 flex justify-center items-center hover:scale-125'>
                         <img src={myPic} className='w-60 h-60 rounded-full shadow-lg shadow-[#f3deea]' alt="My Picture" />
                     </div>
 
