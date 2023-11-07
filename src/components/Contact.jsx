@@ -1,27 +1,118 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {Link} from 'react-scroll'
-import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa';
+import { FaGithub, FaLinkedin} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 
 const Contact = () => {
   const [mobile, setMobile] = useState(false);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [error, setError] = useState(false);
+  const [submissionStatus, setSubmissionStatus] = useState(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let hasError = false;
+    if (name.trim() === '' || email.trim() === '' || !email.includes('@') || message.trim() === '') {
+      setError(true);
+      hasError = true;
+    } else {
+      setError(false);
+    }
+    if (hasError) return;
+    const data = {
+      name,
+      email,
+      message,
+    };
+    fetch('https://getform.io/f/447062fc-e66f-4e67-917f-2a33187594ae', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    }).then((response) => {
+      if (response.ok) {
+        setSubmissionStatus('success');
+        console.log('Form submitted successfully');
+      }else{
+        setSubmissionStatus('error');
+        return response.text();
+      }
+    }).then((data)=> {
+      if (data) {
+        console.error('Error Response:', data);
+      }
+    }).catch((error)=> {
+      setSubmissionStatus('error');
+      console.log('Error', error);
+    });
+    setName('');
+    setEmail('');
+    setMessage('');
+  }
+  useEffect(() => {
+    let id;
+    if(submissionStatus) {
+      id = setTimeout(() => {
+        setSubmissionStatus(null);
+        setError(false);
+      }, 5000);
+    }
+    return () => {
+      clearTimeout(id);
+    }
+  },[submissionStatus]);
   return (
     <div name='contact' className='w-full h-screen bg-[#e5ddf4] flex flex-col justify-center items-center p-4 gap-4'>
-      <form method='POST' action='https://getform.io/f/447062fc-e66f-4e67-917f-2a33187594ae' className='flex flex-col max-w-[600px] w-full'>
+      <form onSubmit={handleSubmit} className='flex flex-col max-w-[600px] w-full'>
         <div className='pb-5 '>
           <p className='text-4xl border-b-4 border-purple-800 inline'>Contact</p>
           <p className='py-4'>Submit the form below or shoot me an email:</p>
           <p className='sm:flex text-purple-800 hover:scale-125 hover:transform origin-left'>sisiwang242@gmail.com</p>
         </div>
-        <input type="text" placeholder='Name' name='name' className='p-2 rounded-sm' />
-        <input type="email" placeholder='Email' name='email' className='my-4 p-2 rounded-sm'/>
-        <textarea className='p-2 rounded-lg'name='message' rows='8' />
+        <input 
+          type="text" 
+          placeholder='Name' 
+          name='name' 
+          className='p-2 rounded-sm' 
+          value={name} 
+          onChange={(e)=> setName(e.target.value)} 
+        />
+        <input 
+          type="email" 
+          placeholder='Email' 
+          name='email' 
+          className='my-4 p-2 rounded-sm'
+          value={email}
+          onChange={(e)=> setEmail(e.target.value)}
+        />
+        <textarea 
+          className='p-2 rounded-lg'
+          name='message' 
+          rows='8' 
+          value={message}
+          onChange={(e)=> setMessage(e.target.value)}
+        />
+        {/* form submission status message */}
+        {
+          submissionStatus === 'success' ? (
+            <p className='text-green-600 pt-4'>Your message has been submitted successfully.</p>
+          ) : submissionStatus === 'error' ? (
+            <p className='text-red-700 pt-4'>There was an error submitting your message.</p>
+          ) : error ? (
+            <p className='text-red-700 pt-4'>Please complete the form.</p>
+          ) : null
+        }
+        {/* submit button */}
         <button className='px-3 py-3 my-8 mx-auto flex items-center border-2 border-purple-600 rounded-full hover:bg-purple-600
            hover:border-purple-600 shadow-md shadow-gray-400'>
-          Let's Collaborate
+            Let's Collaborate
         </button>
       </form>
+
       {/* contacts icons */}
       <div className={!mobile ? 'sm:hidden' : 'flex'}>
             <ul className='flex flex-row justify-left gap-6 pt-4 py-4'>
