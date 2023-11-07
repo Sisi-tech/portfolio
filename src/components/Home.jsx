@@ -3,11 +3,12 @@ import {HiArrowNarrowRight} from 'react-icons/hi';
 import {Link} from 'react-scroll';
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
-import {BsFillPersonLinesFill} from 'react-icons/bs'
-
+import {BsFillPersonLinesFill} from 'react-icons/bs';
 
 const Home = () => {
   const [mobile, setMobile] = useState(false);
+  const Resume_url = 'https://raw.githubusercontent.com/Sisi-tech/portifolio/main/Resume.pdf';
+
   return (
     <div name='home' className='w-full h-screen bg-[#e5ddf4]'>
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full gap-2'>
@@ -41,7 +42,7 @@ const Home = () => {
             </li>
             <li className='w-[50px] h-[50px] rounded-lg flex justify-center items-center bg-[#888888]
                text-white text-4xl shadow-md shadow-gray-400 hover:scale-110'>
-              <a href='' download="">
+              <a href={Resume_url} download="Resume">
                 <BsFillPersonLinesFill />
               </a>
             </li>
