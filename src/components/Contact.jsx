@@ -3,6 +3,7 @@ import {Link} from 'react-scroll'
 import { FaGithub, FaLinkedin} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs'
+import Resume from '../assets/Resume.pdf'
 
 const Contact = () => {
   const [mobile, setMobile] = useState(false);
@@ -71,7 +72,11 @@ const Contact = () => {
         <div className='pb-5 '>
           <p className='text-4xl border-b-4 border-purple-800 inline'>Contact</p>
           <p className='py-4'>Submit the form below or shoot me an email:</p>
-          <p className='sm:flex text-purple-800 hover:scale-125 hover:transform origin-left'>sisiwang242@gmail.com</p>
+          <p className='sm:flex text-purple-800 hover:scale-125 hover:transform origin-left'>
+            <a href='mailto:sisiwang242@gmail.com'>
+              sisiwang242@gmail.com
+            </a>
+          </p>
         </div>
         <input 
           type="text" 
@@ -130,13 +135,13 @@ const Contact = () => {
               </li>
               <li className='w-[50px] h-[50px] rounded-lg flex justify-center items-center bg-[#0074e4]
                 text-white text-4xl shadow-md shadow-gray-400 hover:scale-110'>
-                <a href='sisiwang242@gmail.com'>
+                <a href='mailto:sisiwang242@gmail.com'>
                   <HiOutlineMail />
                 </a>
               </li>
               <li className='w-[50px] h-[50px] rounded-lg flex justify-center items-center bg-[#888888]
                 text-white text-4xl shadow-md shadow-gray-400 hover:scale-110'>
-                <a href='/'>
+                <a href={Resume} download="Resume.pdf" target='_blank' rel="noopener noreferrer">
                   <BsFillPersonLinesFill />
                 </a>
               </li>
