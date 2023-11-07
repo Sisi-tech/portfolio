@@ -3,7 +3,6 @@ import {Link} from 'react-scroll'
 import { FaGithub, FaLinkedin} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs'
-import Resume from '../assets/Resume.pdf'
 
 const Contact = () => {
   const [mobile, setMobile] = useState(false);
@@ -141,7 +140,7 @@ const Contact = () => {
               </li>
               <li className='w-[50px] h-[50px] rounded-lg flex justify-center items-center bg-[#888888]
                 text-white text-4xl shadow-md shadow-gray-400 hover:scale-110'>
-                <a href={Resume} download="Resume.pdf" target='_blank' rel="noopener noreferrer">
+                <a href='' download="">
                   <BsFillPersonLinesFill />
                 </a>
               </li>
