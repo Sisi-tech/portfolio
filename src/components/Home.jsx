@@ -4,6 +4,7 @@ import {Link} from 'react-scroll';
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
+import Resume from "../assets/Resume.pdf";
 
 const Home = () => {
   const [mobile, setMobile] = useState(false);
@@ -42,8 +43,8 @@ const Home = () => {
             </li>
             <li className='w-[50px] h-[50px] rounded-lg flex justify-center items-center bg-[#888888]
                text-white text-4xl shadow-md shadow-gray-400 hover:scale-110'>
-              <a href='https://raw.githubusercontent.com/Sisi-tech/portfolio/main/src/assets/Resume.pdf'
-                  download="Resume.pdf" >
+              <a href={Resume}
+                download="Resume.pdf" >
                 <BsFillPersonLinesFill />
               </a>
             </li>
