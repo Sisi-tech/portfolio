@@ -42,9 +42,8 @@ const Home = () => {
             </li>
             <li className='w-[50px] h-[50px] rounded-lg flex justify-center items-center bg-[#888888]
                text-white text-4xl shadow-md shadow-gray-400 hover:scale-110'>
-              <a href="https://github.com/Sisi-tech/portfolio/main/src/assets/Resume.pdf?raw=true"
-                download="Resume.pdf">
-                <BsFillPersonLinesFill />
+              <a href="/src/assets/Resume.pdf" download="Resume.pdf">
+                <BsFillPersonLinesFill /> 
               </a>
             </li>
           </ul>
