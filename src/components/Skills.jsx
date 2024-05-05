@@ -3,8 +3,10 @@ import HTML from '../assets/html.png';
 import CSS from '../assets/css.png';
 import JavaScript from '../assets/javascript.png';
 import react from '../assets/react.png';
-import Node from '../assets/node.png';
+import Python from '../assets/python.png';
 import GitHub from '../assets/github.png';
+import tailwindCSS from '../assets/tailwindCSS.png';
+import Django from '../assets/django.png';
 
 const Skills = () => {
   return (
@@ -25,6 +27,11 @@ const Skills = () => {
                     <img className='w-20 mx-auto' src={CSS} alt="CSS Icon" />
                     <p className='my-2'>CSS</p>
                 </div>
+            {/* Tailwind CSS */}
+                <div className='shadow-md shadow-[#cbb9f7] hover:scale-110 duration-500 pt-2 pb-2'>
+                    <img className='w-20 mx-auto' src={tailwindCSS} alt="tailwindCSS Icon" />
+                    <p className='my-2'>Tailwind CSS</p>
+                </div>
             {/* JavaScript */}
                 <div className='shadow-md shadow-[#cbb9f7] hover:scale-110 duration-500 pt-2 pb-2'>
                     <img className='w-20 mx-auto' src={JavaScript} alt="JavaScript Icon" />
@@ -35,10 +42,15 @@ const Skills = () => {
                     <img className='w-20 mx-auto' src={react} alt="React Icon" />
                     <p className='my-2'>React</p>
                 </div>
-            {/* Node */}
+            {/* Python */}
                 <div className='shadow-md shadow-[#cbb9f7] hover:scale-110 duration-500 pt-2 pb-2'>
-                    <img className='w-20 mx-auto' src={Node} alt="Node Icon" />
-                    <p className='my-2'>Node</p>
+                    <img className='w-20 mx-auto' src={Python} alt="Python Icon" />
+                    <p className='my-2'>Python</p>
+                </div>
+            {/* Django */}
+                <div className='shadow-md shadow-[#cbb9f7] hover:scale-110 duration-500 pt-2 pb-2'>
+                    <img className='w-20 mx-auto' src={Django} alt="Django Icon" />
+                    <p className='my-2'>Django</p>
                 </div>
             {/* GitHub */}
                 <div className='shadow-md shadow-[#cbb9f7] hover:scale-110 duration-500 pt-2 pb-2'>

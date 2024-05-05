@@ -16,7 +16,7 @@ const Navbar = () => {
 
         {/* menu */}
         <div className='hidden md:flex'>
-            <ul className='hidden md:flex text-xl gap-5 mr-14'>
+            <ul className='hidden md:flex md:text-2xl text-xl gap-5 mr-14'>
                 <li>
                     <Link to='home' smooth={true} duration={500} >Home</Link>
                 </li>

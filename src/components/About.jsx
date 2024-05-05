@@ -11,7 +11,7 @@ const About = () => {
                         About
                     </p>
                 </div>
-                {/* <div></div> */}
+                
             </div>
             <div className='max-w-[1000px] w-full grid grid-cols-1 sm:grid-cols-2'>
                     <div className='px-4 py-5 pt-4 flex justify-center items-center hover:scale-125'>
@@ -24,7 +24,7 @@ const About = () => {
                         </div>
                         <div>
                             <p className='text-xl leading-normal '>
-                            I'm a full stack developer passionate about creating seamless digital experiences. With expertise in both front-end (React.js) and back-end (Node.js). My adaptability and continuous learning ensure I stay at the forefront of web development trends, making me a valuable addition to any team looking to transform complex ideas into elegant digital solutions.
+                            I'm passionate about creating seamless digital experiences. With expertise in both front-end (React.js) and back-end (Python). My adaptability and continuous learning ensure I stay at the forefront of web development trends, making me a valuable addition to any team looking to transform complex ideas into elegant digital solutions.
                             </p>
                         </div>
                     </div>

@@ -13,11 +13,9 @@ const Home = () => {
     <div name='home' className='w-full h-screen bg-[#e5ddf4]'>
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full gap-2'>
         <p className='text-xl sm:text-4xl text-purple-800'>Hi, my name is</p>
-        <h1 className='text-3xl sm:text-6xl font-bold text-gray-700'>Sisi Wang</h1>
-        <h2 className='text-3xl sm:text-6xl font-bold text-gray-800'>I'm a Full Stack Developer.</h2>
-        <p className='text-gray-800 py-4 max-w-[700px]'>I'm a full-stack developer specializing in building (and occasionally designing) exceptional digital experiences.
-          Currently, I'm focused on building responsive full-stack web applications.
-        </p>
+        <h1 className='text-3xl sm:text-5xl font-bold text-gray-700'>Sisi Wang</h1>
+        <h2 className='text-3xl sm:text-5xl font-bold text-gray-800'>I'm a Web Developer.</h2>
+        <p className='text-gray-800 py-4 max-w-[700px] text-xl'>I'm a passionate software engineer with a strong interest in building efficient and scalable software solutions. Currently exploring various technologies and frameworks to expand my skills and knowledge.</p>
 
         {/* contacts for mobile screen */}
         <div className={!mobile ? 'sm:hidden' : 'flex'}>
