@@ -67,7 +67,7 @@ const Contact = () => {
     }
   },[submissionStatus]);
   return (
-    <div name='contact' className='w-full h-screen bg-[#e5ddf4] flex flex-col justify-center items-center p-4 gap-4'>
+    <div name='contact' className='w-full h-auto bg-[#e5ddf4] flex flex-col justify-center items-center p-4 gap-4'>
       <form onSubmit={handleSubmit} className='flex flex-col max-w-[600px] w-full'>
         <div className='pb-5 '>
           <p className='text-4xl border-b-4 border-purple-800 inline'>Contact</p>
