@@ -71,8 +71,8 @@ const Contact = () => {
       <form onSubmit={handleSubmit} className='flex flex-col max-w-[600px] w-full'>
         <div className='pb-5 '>
           <p className='text-4xl border-b-4 border-purple-800 inline'>Contact</p>
-          <p className='py-4'>Submit the form below or shoot me an email:</p>
-          <p className='sm:flex text-purple-800 hover:scale-125 hover:transform origin-left'>
+          <p className='py-4 text-xl'>Submit the form below or shoot me an email:</p>
+          <p className='sm:flex text-purple-800 hover:scale-125 hover:transform origin-left text-xl'>
             <a href='mailto:sisiwang242@gmail.com'>
               sisiwang242@gmail.com
             </a>
