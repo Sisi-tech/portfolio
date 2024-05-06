@@ -91,7 +91,7 @@ const Navbar = () => {
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300'
                     style={{background: 'linear-gradient(to right, white 60%, #888888 40%'}} >
                     <a className='flex justify-between items-center w-full text-gray-100' 
-                        href="https://raw.githubusercontent.com/Sisi-tech/portfolio/main/src/assets/Resume.pdf" download="Resume.pdf">
+                        href="https://raw.githubusercontent.com/Sisi-tech/portfolio/main/src/assets/SisiResume.pdf" download="Resume.pdf">
                         <span className='text-black'>Resume</span>
                         <BsFillPersonLinesFill size={30} />
                     </a>
