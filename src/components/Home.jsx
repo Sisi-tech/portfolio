@@ -4,6 +4,7 @@ import {Link} from 'react-scroll';
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
+import swing from '../assets/swing.gif';
 
 const Home = () => {
   const [mobile, setMobile] = useState(false);
@@ -57,7 +58,7 @@ const Home = () => {
             </button>
           </Link>
           <div className='absolute right-0'> 
-            <img src="src/assets/swing.gif" width="50%" />
+            <img src={swing} width="50%" />
           </div>
         </div>
       </div>
