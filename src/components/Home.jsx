@@ -11,12 +11,12 @@ const Home = () => {
   // const Resume_url = 'https://raw.githubusercontent.com/Sisi-tech/portfolio/main/src/assets/Resume.pdf';
 
   return (
-    <div name='home' className='w-full h-screen bg-[#e5ddf4] flex justify-center align-center'>
+    <div name='home' className='w-full h-screen bg-[#e5ddf4] flex justify-center align-center items-center'>
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full gap-2'>
         <p className='md:text-4xl text-2xl text-purple-800'>Hi, my name is</p>
         <h1 className='text-3xl sm:text-5xl font-bold text-gray-700'>Sisi Wang</h1>
         <h2 className='text-3xl sm:text-5xl font-bold text-gray-800'>I'm a Web Developer.</h2>
-        <p className='text-gray-800 py-4 max-w-[700px] text-xl'>I'm a passionate software engineer with a strong interest in building efficient and scalable software solutions. Currently exploring various technologies and frameworks to expand my skills and knowledge.</p>
+        <p className='text-gray-800 py-4 max-w-[700px] text-xl leading-9'>I'm a passionate software engineer with a strong interest in building efficient and scalable software solutions. Currently exploring various technologies and frameworks to expand my skills and knowledge.</p>
 
         {/* contacts for mobile screen */}
         <div className={!mobile ? 'sm:hidden' : 'flex'}>
@@ -57,11 +57,12 @@ const Home = () => {
               </span>
             </button>
           </Link>
-          <div className='absolute right-0'> 
-            <img src={swing} width="50%" />
-          </div>
+          <div className='absolute left-10 bottom-28 top-22 right-0 flex flex-auto justify-end'> 
+            <img src={swing} width="50%" className='sm:w-[120%] md:w-[50%]' />
+        </div>
         </div>
       </div>
+        
     </div>
   )
 }
