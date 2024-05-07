@@ -11,7 +11,7 @@ const Home = () => {
   // const Resume_url = 'https://raw.githubusercontent.com/Sisi-tech/portfolio/main/src/assets/Resume.pdf';
 
   return (
-    <div name='home' className='w-full h-screen bg-[#e5ddf4] flex justify-center align-center items-center'>
+    <div name='home' className='w-full h-screen bg-[#e5ddf4] flex justify-center align-center items-center pt-10'>
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full gap-2'>
         <p className='md:text-4xl text-2xl text-purple-800'>Hi, my name is</p>
         <h1 className='text-3xl sm:text-5xl font-bold text-gray-700'>Sisi Wang</h1>
