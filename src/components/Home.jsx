@@ -10,7 +10,7 @@ const Home = () => {
   // const Resume_url = 'https://raw.githubusercontent.com/Sisi-tech/portfolio/main/src/assets/Resume.pdf';
 
   return (
-    <div name='home' className='w-full h-screen bg-[#e5ddf4]'>
+    <div name='home' className='w-full h-screen bg-[#e5ddf4] flex justify-center align-center'>
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full gap-2'>
         <p className='md:text-4xl text-2xl text-purple-800'>Hi, my name is</p>
         <h1 className='text-3xl sm:text-5xl font-bold text-gray-700'>Sisi Wang</h1>
@@ -46,7 +46,6 @@ const Home = () => {
             </li>
           </ul>
         </div>
-
         {/* button */}
         <div>
           <Link to="work" smooth={true} duration={400}>
@@ -57,6 +56,9 @@ const Home = () => {
               </span>
             </button>
           </Link>
+          <div className='absolute right-0'> 
+            <img src="src/assets/swing.gif" width="50%" />
+          </div>
         </div>
       </div>
     </div>
