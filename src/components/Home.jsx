@@ -48,19 +48,19 @@ const Home = () => {
           </ul>
         </div>
         {/* button */}
-        <div>
-          <Link to="work" smooth={true} duration={400}>
-            <button className='border-2 group border-purple-800 hover:bg-[#cbb9f7] hover:border-[#cbb9f7] hover:text-white px-5 py-3 my-2 flex items-center rounded-md'>
+        <Link to="work" smooth={true} duration={400} className='cursor-pointer'>
+          <button className='border-2 group border-purple-800 hover:bg-[#cbb9f7] hover:border-[#cbb9f7] hover:text-white px-5 py-3 my-2 flex items-center rounded-md' style={{ zIndex: 1}}>
               View Work 
-              <span className='group-hover:rotate-90 duration-300'>
+            <span className='group-hover:rotate-90 duration-300'>
               <HiArrowNarrowRight className='ml-3 text-xl'/>
-              </span>
-            </button>
-          </Link>
-          <div className='absolute left-10 bottom-28 top-22 right-0 flex flex-auto justify-end'> 
-            <img src={swing} width="50%" className='sm:w-[120%] md:w-[50%]' />
+            </span>
+          </button>
+        </Link>
+
+        <div className='swing absolute transform right-0 bottom-0 pl-20'> 
+          <img src={swing} width="50%" className='w-[70%]' />
         </div>
-        </div>
+
       </div>
         
     </div>
