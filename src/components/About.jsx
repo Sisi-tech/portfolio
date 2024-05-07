@@ -3,11 +3,11 @@ import myPic from '../assets/myPic.jpg'
 
 const About = () => {
   return (
-    <div name="about" className='w-full h-screen bg-[#e5ddf4]'>
+    <div name="about" className='w-full md:h-screen sm:h-auto bg-[#e5ddf4]'>
         <div className='flex flex-col justify-center align-center items-center w-full h-full'>
             <div className='max-w-[1000px] w-full px-8 grid grid-cols-1 sm:grid-cols-2 gap-8'>
-                <div className='pb-4 pr-4'>
-                    <p className='text-4xl font-bold inline border-b-4 border-purple-800'>
+                <div className='pb-4 pr-4 pt-20'>
+                    <p className='text-3xl sm:text-4xl font-bold inline border-b-4 border-purple-800'>
                         About
                     </p>
                 </div>
