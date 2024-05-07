@@ -57,7 +57,7 @@ const Home = () => {
           </button>
         </Link>
 
-        <div className='swing absolute transform right-0 bottom-0 pl-20'> 
+        <div className='swing absolute transform right-0 bottom-20  pl-2'> 
           <img src={swing} width="50%" className='w-[70%]' />
         </div>
 
