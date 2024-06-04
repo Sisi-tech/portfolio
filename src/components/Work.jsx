@@ -3,6 +3,7 @@ import hubbyHub from '../assets/hubbyHub.png'
 import vst from '../assets/vst.png'
 import crewmate from '../assets/crewmate.png'
 import PendingImg from '../assets/pendingImg.jpg'
+import yummyGarden from '../assets/yummyGarden.png'
 
 const Work = () => {
   const [mobile, setMobile] = useState(false);
@@ -134,7 +135,47 @@ const Work = () => {
             </div>
         </div>
 
-        {/* Project 4 - Pending Project */}
+        {/* Project 4 - YummyGarden */}
+      <div className={`grid grid-cols-1 sm:grid-cols-2 gap-6 sm:justify-center sm:items-center shadow-lg shadow-[#cbb9f7] px-4 py-4 
+          ${!mobile ? 'grid-cols-1' : 'grid-cols-2'}`}>
+        <div className='col-span-2 sm:col-span-1'>
+          <div className='max-w-[1000px] mx-auto text-center'>
+              <div style={{backgroundImage: `url(${yummyGarden})`}}
+                className='shadow-lg shadow-[#cbb9f7] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                <div className='opacity-0 group-hover:opacity-100'>
+                  <span className='text-2xl font-bold text-white tracking-wider'>
+                    Python/Django
+                  </span>
+                  <div className='pt-8 text-center'>
+                    <a href="https://www.loom.com/share/25226b2614b74d2fab90c2f9c9ec496b?sid=c070b926-acc3-4f36-b66e-ec315b56148a" >
+                      <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                        Video 
+                      </button>
+                    </a>
+                    <a href="https://github.com/Sisi-tech/YummyGarden">
+                      <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                        Code
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+            <div className='sm:text-left flex flex-col' >
+              <h1 className='text-2xl text-purple-800 py-4 '>YummyGarden - Python/Django</h1>
+              <p className='text-[18px] py-4 text-left'>
+              This restaurant website provides comprehensive information about the restaurant, including detailed menus. Customers can browse the menus online, make reservations directly through the website, and post reviews. The site is fully responsive, ensuring an optimal experience on both desktop and mobile devices.
+              </p>
+              <div className='text-purple-800'>
+                <a href="https://www.loom.com/share/25226b2614b74d2fab90c2f9c9ec496b?sid=c070b926-acc3-4f36-b66e-ec315b56148a" alt="video" >
+                 Video walkthrough
+                </a>
+              </div>
+            </div>
+        </div>
+
+        {/* Project 5 - Pending Project */}
         <div className={`grid grid-cols-1 sm:grid-cols-2 gap-6 sm:justify-center sm:items-center shadow-lg shadow-[#cbb9f7] px-4 py-4 
           ${!mobile ? 'grid-cols-1' : 'grid-cols-2'}`}>
         <div className='col-span-2 sm:col-span-1'>
