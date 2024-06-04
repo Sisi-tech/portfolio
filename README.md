@@ -1,5 +1,5 @@
 # Portfolio Page
-[Please feel free to check it out from here ( ＾◡＾)っ✂╰⋃╯](https://sisi-wang-portfolio.netlify.app/)
+[Please feel free to check it out from here](https://sisi-wang-portfolio.netlify.app/)
 
 ## License
 
